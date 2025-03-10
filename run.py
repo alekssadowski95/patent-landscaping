@@ -4,7 +4,7 @@ import csv
 
 dir_path = os.path.abspath(os.path.dirname(__file__))
 
-df = pd.read_json(os.path.join(dir_path, 'bquxjob_1e975433_195807d7dd1.json'))
+df = pd.read_csv(os.path.join(dir_path, '100K-bq-results-20250310-170014-1741626019624.csv'))
 
 print('\n')
 print('Most cited patent documents:')
