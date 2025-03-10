@@ -1,10 +1,12 @@
 # patent-landscaping
 
-## Most cited patent documents|    | publication_number   | title                                                                                  | url                                           | code          |   number_of_cited_by |
+## Most cited patent documents
+
+|    | publication_number   | title                                                                                  | url                                           | code          |   number_of_cited_by |
 |---:|:---------------------|:---------------------------------------------------------------------------------------|:----------------------------------------------|:--------------|---------------------:|
 |  0 | US-4816567-A         | Recombinant immunoglobin preparations                                                  | https://patents.google.com/patent/US4816567A  | Y10S530/866   |                12642 |
-|  1 | US-4683202-B1        | nan                                                                                    | https://patents.google.com/patent/US4683202B1 | C12Q1/686     |                12528 |
-|  2 | US-4683202-A         | Process for amplifying nucleic acid sequences                                          | https://patents.google.com/patent/US4683202A  | C12Q1/6827    |                12528 |
+|  1 | US-4683202-A         | Process for amplifying nucleic acid sequences                                          | https://patents.google.com/patent/US4683202A  | C12Q1/6827    |                12528 |
+|  2 | US-4683202-B1        | nan                                                                                    | https://patents.google.com/patent/US4683202B1 | C12Q1/686     |                12528 |
 |  3 | US-4683195-A         | Process for amplifying, detecting, and/or-cloning nucleic acid sequences               | https://patents.google.com/patent/US4683195A  | C12Q1/686     |                10364 |
 |  4 | US-4683195-B1        | nan                                                                                    | https://patents.google.com/patent/US4683195B1 | C12Q1/6827    |                10364 |
 |  5 | US-5585089-A         | Humanized immunoglobulins                                                              | https://patents.google.com/patent/US5585089A  | A61P31/12     |                 6829 |
@@ -13,41 +15,47 @@
 |  8 | US-5523520-A         | Mutant dwarfism gene of petunia                                                        | https://patents.google.com/patent/US5523520A  | A01H5/02      |                 5839 |
 |  9 | US-5892900-A         | Systems and methods for secure transaction management and electronic rights protection | https://patents.google.com/patent/US5892900A  | G06F2221/2147 |                 5586 |
 
-## Most cited CPC categories|                |   number_of_cited_by |
+## Most cited CPC categories
+
+|                |   number_of_cited_by |
 |:---------------|---------------------:|
-| nan            |               909435 |
-| A61B17/07207   |               678181 |
-| A61B17/072     |               297898 |
-| H04L9/40       |               248146 |
-| A61B2017/07214 |               223765 |
-| G06Q30/02      |               204850 |
-| A61B2017/2927  |               195337 |
-| A61B17/068     |               187353 |
-| A61B17/115     |               172201 |
-| G07F17/32      |               161309 |
+| A61B17/07207   |               467082 |
+| nan            |               240202 |
+| A61B17/072     |               221223 |
+| A61B2017/07214 |               169437 |
+| A61B2017/2927  |               149861 |
+| A61B17/115     |               130926 |
+| A61B17/1155    |               120932 |
+| A61B17/068     |               116662 |
+| H01L29/7869    |               105977 |
+| A61B17/0644    |                87650 |
 
-## Most cited top CPC categories (L2)|     |   number_of_cited_by |
+## Most cited top CPC categories (L2)
+
+|     |   number_of_cited_by |
 |:----|---------------------:|
-| A61 |          2.12065e+07 |
-| G06 |          6.41829e+06 |
-| H04 |          5.3316e+06  |
-| H01 |          2.7761e+06  |
-| Y10 |          1.49878e+06 |
-| G01 |          1.10326e+06 |
-| G07 |          1.02248e+06 |
-| nan |     909435           |
-| C12 |     901714           |
-| C07 |     699843           |
+| A61 |          8.88433e+06 |
+| G06 |          1.1299e+06  |
+| H04 |     693842           |
+| H01 |     566493           |
+| Y10 |     424504           |
+| C12 |     271364           |
+| C07 |     265968           |
+| nan |     240202           |
+| G07 |     218257           |
+| H02 |     177065           |
 
-## Most cited top CPC categories|    |   number_of_cited_by |
+## Most cited top CPC categories
+
+|    |   number_of_cited_by |
 |:---|---------------------:|
-| A  |          2.2275e+07  |
-| G  |          1.13011e+07 |
-| H  |          9.21892e+06 |
-| C  |          3.10302e+06 |
-| B  |          1.80819e+06 |
-| Y  |          1.67188e+06 |
-| n  |     909435           |
-| F  |     480728           |
-| E  |     229294           |
-| D  |     139805           |
+| A  |          9.08626e+06 |
+| G  |          1.87372e+06 |
+| H  |          1.54149e+06 |
+| C  |     712506           |
+| Y  |     446905           |
+| B  |     396728           |
+| n  |     240202           |
+| F  |     109835           |
+| D  |      45259           |
+| E  |      10342           |

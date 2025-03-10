@@ -4,7 +4,7 @@ import csv
 
 dir_path = os.path.abspath(os.path.dirname(__file__))
 
-df = pd.read_csv(os.path.join(dir_path, '100K-bq-results-20250310-170014-1741626019624.csv'))
+df = pd.read_csv(os.path.join(dir_path, '10K-bquxjob_1e975433_195807d7dd1.csv'))
 
 print('\n')
 print('Most cited patent documents:')
@@ -74,13 +74,13 @@ print(df_3.head(10))
 
 with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('# patent-landscaping')
-    f.write('\n\n## Most cited patent documents')
+    f.write('\n\n## Most cited patent documents\n\n')
     f.write(df.head(10).to_markdown())
-    f.write('\n\n## Most cited CPC categories')
+    f.write('\n\n## Most cited CPC categories\n\n')
     f.write(df_2.head(10).to_markdown())
-    f.write('\n\n## Most cited top CPC categories (L2)')
+    f.write('\n\n## Most cited top CPC categories (L2)\n\n')
     f.write(df_4.head(10).to_markdown())
-    f.write('\n\n## Most cited top CPC categories')
+    f.write('\n\n## Most cited top CPC categories\n\n')
     f.write(df_3.head(10).to_markdown())
 
 
