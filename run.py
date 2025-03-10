@@ -4,15 +4,25 @@ import csv
 
 dir_path = os.path.abspath(os.path.dirname(__file__))
 
+# Load entire patent data csv as pandas dataframe
 df = pd.read_csv(os.path.join(dir_path, '10K-bquxjob_1e975433_195807d7dd1.csv'))
-
+df = df.dropna()
 print('\n')
 print('Most cited patent documents:')
 print('-----------------------')
 print(df.head(10)) 
 
+# Load cpc categories
+df_cpc = pd.read_csv(os.path.join(dir_path, 'CPC-bq-results-20250310-215736-1741643875074.csv'))
+df_cpc = df_cpc.dropna()
+print('\n')
+print('CPC categories:')
+print('-----------------------')
+print(df_cpc.head(10))
 
-# Number of citations per category
+
+
+
 cpc_categories = {}
 
 for index, row in df.iterrows():
@@ -24,15 +34,21 @@ for index, row in df.iterrows():
 # Sort the dictionary by its values in ascending order
 sorted_dict = dict(sorted(cpc_categories.items(), reverse = True, key=lambda item: item[1]))
 
-df_2 = pd.DataFrame.from_dict(sorted_dict, orient='index', dtype=None, columns=['number_of_cited_by'])
 
+df_2 = pd.DataFrame.from_dict(sorted_dict, orient='index').reset_index()
+df_2.columns = ['code', 'number_of_cited_by']
 
 print('\n')
-print('Most cited top CPC categories:')
+print('Most cited CPC categories:')
 print('-----------------------')
-print(df_2.head(10))
+df_2_head = df_2.head(10)
+description_list = []
+for index, row in df_2_head.iterrows():
+    results = df_cpc.loc[df_cpc["symbol"] == row["code"]]
+    description_list.append(results['titleFull'].values[0])
+df_2_head['description'] = description_list
+print(df_2_head)
 
-# Number of citations per category (top level)
 cpc_categories_top_2 = {}
 
 for index, row in df.iterrows():
@@ -45,14 +61,22 @@ for index, row in df.iterrows():
 # Sort the dictionary by its values in ascending order
 sorted_dict_2 = dict(sorted(cpc_categories_top_2.items(), reverse = True, key=lambda item: item[1]))
 
-df_4 = pd.DataFrame.from_dict(sorted_dict_2, orient='index', dtype=None, columns=['number_of_cited_by'])
+df_4 = pd.DataFrame.from_dict(sorted_dict_2, orient='index').reset_index()
+df_4.columns = ['code', 'number_of_cited_by']
 
+# Number of citations per category L2
 print('\n')
 print('Most cited top CPC categories (L2):')
 print('-----------------------')
-print(df_4.head(10))
+df_4_head = df_4.head(10)
+description_list_4 = []
+for index, row in df_4_head.iterrows():
+    results = df_cpc.loc[df_cpc["symbol"] == row["code"]]
+    description_list.append(results['titleFull'].values[0])
+df_4_head['description'] = description_list
 
-# Number of citations per category (top level)
+
+
 cpc_categories_top = {}
 
 for index, row in df.iterrows():
@@ -67,8 +91,9 @@ sorted_dict_3 = dict(sorted(cpc_categories_top.items(), reverse = True, key=lamb
 
 df_3 = pd.DataFrame.from_dict(sorted_dict_3, orient='index', dtype=None, columns=['number_of_cited_by'])
 
+# Number of citations per top category
 print('\n')
-print('Most cited CPC categories:')
+print('Most cited CPC top categories:')
 print('-----------------------')
 print(df_3.head(10))
 

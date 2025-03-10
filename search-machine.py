@@ -15,7 +15,6 @@ print('')
 
 command_history = []
 
-print('Loading patent data...')
 # define type of data in patent file
 dtype = {
     'publication_number': object,
@@ -25,10 +24,19 @@ dtype = {
     'number_of_cited_by': 'int32',
 }
 
-# Load entire csv as pandas dataframe
+# Load entire patent data csv as pandas dataframe
+print('Loading patent data...')
 #df = pd.read_csv('C:\\Users\\Work\\Downloads\\1M-bq-results-20250310-165622-1741625891242.csv', dtype=dtype)
 df = pd.read_csv(os.path.join(dir_path, '1M-bq-results-20250310-165622-1741625891242.csv'), dtype=dtype)
 df = df.dropna()
+
+# Load cpc categories
+print('Loading cpc categories...')
+df_cpc = pd.read_csv(os.path.join(dir_path, 'CPC-bq-results-20250310-215736-1741643875074.csv'))
+df_cpc = df_cpc.dropna()
+
+def get_cpc_description(cpc_str):
+    pass
 
 os.system('cls') 
 
@@ -39,7 +47,7 @@ print('Aleksander Sadowski (C) 2025')
 print('\n')
 print('Most cited patent documents:')
 print('-----------------------')
-print(df.head(15))
+print(df.head(30))
 print('Total patent entries: ' + f"{df.shape[0]:,}")
 print('Memory usage: ' + pd.io.formats.info.DataFrameInfo(df).memory_usage_string.strip())
 
@@ -60,7 +68,7 @@ while True:
     print('')
     print(str(df_temp.shape[0]) + ' Results for CPC "' + cpc + '"')
     print('-----------------------')
-    print(df_temp.head(15))
-    print('Only showing 15 most cited.')
+    print(df_temp.head(30))
+    print('Only showing 30 most cited.')
 
 
