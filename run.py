@@ -73,7 +73,8 @@ print('-----------------------')
 print(df_3.head(10))
 
 with open(os.path.join(dir_path, "README.md"), "w") as f:
-    f.write('# patent-landscaping')
+    f.write('# Patent Landscaping for Mechanical Engineering')
+    f.write('\n\nThe goal of this project is to automate the patent landscaping process in mechanical engineering, in order to quickly identify imporatant patent documents and CPC categories.\n\n')
     f.write('\n\n## Most cited patent documents\n\n')
     f.write(df.head(10).to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited CPC categories\n\n')

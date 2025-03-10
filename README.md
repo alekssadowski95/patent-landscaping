@@ -1,4 +1,8 @@
-# patent-landscaping
+# Patent Landscaping for Mechanical Engineering
+
+The goal of this project is to automate the patent landscaping process in mechanical engineering, in order to quickly identify imporatant patent documents and CPC categories.
+
+
 
 ## Most cited patent documents
 
