@@ -75,13 +75,13 @@ print(df_3.head(10))
 with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('# patent-landscaping')
     f.write('\n\n## Most cited patent documents\n\n')
-    f.write(df.head(10).to_markdown())
+    f.write(df.head(10).to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited CPC categories\n\n')
-    f.write(df_2.head(10).to_markdown())
+    f.write(df_2.head(10).to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited top CPC categories (L2)\n\n')
-    f.write(df_4.head(10).to_markdown())
+    f.write(df_4.head(10).to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited top CPC categories\n\n')
-    f.write(df_3.head(10).to_markdown())
+    f.write(df_3.head(10).to_markdown(floatfmt='.0f'))
 
 
 
