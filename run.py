@@ -72,15 +72,15 @@ print('Most cited CPC categories:')
 print('-----------------------')
 print(df_3.head(10))
 
-with open(os.path.join(dir_path, "REAMDME.md"), "w") as f:
+with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('# patent-landscaping')
-    f.write('## Most cited patent documents')
+    f.write('\n\n## Most cited patent documents')
     f.write(df.head(10).to_markdown())
-    f.write('## Most cited CPC categories')
+    f.write('\n\n## Most cited CPC categories')
     f.write(df_2.head(10).to_markdown())
-    f.write('## Most cited top CPC categories (L2)')
+    f.write('\n\n## Most cited top CPC categories (L2)')
     f.write(df_4.head(10).to_markdown())
-    f.write('## Most cited top CPC categories')
+    f.write('\n\n## Most cited top CPC categories')
     f.write(df_3.head(10).to_markdown())
 
 
