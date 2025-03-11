@@ -25,21 +25,6 @@ This project includes 10K and 100K entries of patent documents.
 
 ## Most cited CPC categories
 
-|    | code   |   number_of_cited_by | description                                                                                           |
-|---:|:-------|---------------------:|:------------------------------------------------------------------------------------------------------|
-|  0 | A61    |              8867266 | MEDICAL OR VETERINARY SCIENCE; HYGIENE                                                                |
-|  1 | G06    |              1128847 | COMPUTING; CALCULATING OR COUNTING                                                                    |
-|  2 | H04    |               692852 | ELECTRIC COMMUNICATION TECHNIQUE                                                                      |
-|  3 | H01    |               566493 | ELECTRIC ELEMENTS                                                                                     |
-|  4 | Y10    |               422487 | TECHNICAL SUBJECTS COVERED BY FORMER USPC                                                             |
-|  5 | C07    |               265968 | ORGANIC CHEMISTRY                                                                                     |
-|  6 | C12    |               248472 | BIOCHEMISTRY; BEER; SPIRITS; WINE; VINEGAR; MICROBIOLOGY; ENZYMOLOGY; MUTATION OR GENETIC ENGINEERING |
-|  7 | G07    |               218257 | CHECKING-DEVICES                                                                                      |
-|  8 | H02    |               177065 | GENERATION; CONVERSION OR DISTRIBUTION OF ELECTRIC POWER                                              |
-|  9 | G01    |               168657 | MEASURING; TESTING                                                                                    |
-
-## Most cited top CPC categories (L2)
-
 |    | code           |   number_of_cited_by | description                                                                                                                                                                                                                |
 |---:|:---------------|---------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  0 | A61B17/07207   |               464655 | Surgical staplers, e.g. containing multiple staples or clamps for applying a row of staples in a single action, e.g. the staples being applied simultaneously the staples being applied sequentially                       |
@@ -53,7 +38,7 @@ This project includes 10K and 100K entries of patent documents.
 |  8 | A61B17/0644    |                87650 | Surgical staples, i.e. penetrating the tissue penetrating the tissue, deformable to closed position                                                                                                                        |
 |  9 | A61B17/07292   |                85040 | Reinforcements for staple line, e.g. pledgets                                                                                                                                                                              |
 
-## Most cited top CPC categories
+## Most cited top CPC categories (L2)
 
 |    | code   |   number_of_cited_by | description                                                                                           |
 |---:|:-------|---------------------:|:------------------------------------------------------------------------------------------------------|
@@ -67,3 +52,17 @@ This project includes 10K and 100K entries of patent documents.
 |  7 | G07    |               218257 | CHECKING-DEVICES                                                                                      |
 |  8 | H02    |               177065 | GENERATION; CONVERSION OR DISTRIBUTION OF ELECTRIC POWER                                              |
 |  9 | G01    |               168657 | MEASURING; TESTING                                                                                    |
+
+## Most cited top CPC categories
+
+|    | code   |   number_of_cited_by | description                                                                                                                                                                                                                                 |
+|---:|:-------|---------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | A      |              9069187 | HUMAN NECESSITIES                                                                                                                                                                                                                           |
+|  1 | G      |              1872664 | PHYSICS                                                                                                                                                                                                                                     |
+|  2 | H      |              1540501 | ELECTRICITY                                                                                                                                                                                                                                 |
+|  3 | C      |               688420 | CHEMISTRY; METALLURGY                                                                                                                                                                                                                       |
+|  4 | Y      |               444888 | GENERAL TAGGING OF NEW TECHNOLOGICAL DEVELOPMENTS; GENERAL TAGGING OF CROSS-SECTIONAL TECHNOLOGIES SPANNING OVER SEVERAL SECTIONS OF THE IPC; TECHNICAL SUBJECTS COVERED BY FORMER USPC CROSS-REFERENCE ART COLLECTIONS [XRACs] AND DIGESTS |
+|  5 | B      |               393890 | PERFORMING OPERATIONS; TRANSPORTING                                                                                                                                                                                                         |
+|  6 | F      |               109835 | MECHANICAL ENGINEERING; LIGHTING; HEATING; WEAPONS; BLASTING                                                                                                                                                                                |
+|  7 | D      |                45259 | TEXTILES; PAPER                                                                                                                                                                                                                             |
+|  8 | E      |                10342 | FIXED CONSTRUCTIONS                                                                                                                                                                                                                         |

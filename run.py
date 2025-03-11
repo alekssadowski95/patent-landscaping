@@ -113,11 +113,11 @@ with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('\n\n## Most cited patent documents\n\n')
     f.write(df.head(10).to_markdown(floatfmt=".0f"))
     f.write('\n\n## Most cited CPC categories\n\n')
-    f.write(df_4_head.to_markdown(floatfmt='.0f'))
-    f.write('\n\n## Most cited top CPC categories (L2)\n\n')
     f.write(df_2_head.to_markdown(floatfmt='.0f'))
-    f.write('\n\n## Most cited top CPC categories\n\n')
+    f.write('\n\n## Most cited top CPC categories (L2)\n\n')
     f.write(df_4_head.to_markdown(floatfmt='.0f'))
+    f.write('\n\n## Most cited top CPC categories\n\n')
+    f.write(df_3_head.to_markdown(floatfmt='.0f'))
 
 
 
