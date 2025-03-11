@@ -49,6 +49,8 @@ for index, row in df_2_head.iterrows():
 df_2_head['description'] = description_list
 print(df_2_head)
 
+
+
 cpc_categories_top_2 = {}
 
 for index, row in df.iterrows():
@@ -72,9 +74,9 @@ df_4_head = df_4.head(10)
 description_list_4 = []
 for index, row in df_4_head.iterrows():
     results = df_cpc.loc[df_cpc["symbol"] == row["code"]]
-    description_list.append(results['titleFull'].values[0])
-df_4_head['description'] = description_list
-
+    description_list_4.append(results['titleFull'].values[0])
+df_4_head['description'] = description_list_4
+print(df_4_head)
 
 
 cpc_categories_top = {}
@@ -89,13 +91,20 @@ for index, row in df.iterrows():
 # Sort the dictionary by its values in ascending order
 sorted_dict_3 = dict(sorted(cpc_categories_top.items(), reverse = True, key=lambda item: item[1]))
 
-df_3 = pd.DataFrame.from_dict(sorted_dict_3, orient='index', dtype=None, columns=['number_of_cited_by'])
+df_3 = pd.DataFrame.from_dict(sorted_dict_3, orient='index').reset_index()
+df_3.columns = ['code', 'number_of_cited_by']
 
 # Number of citations per top category
 print('\n')
 print('Most cited CPC top categories:')
 print('-----------------------')
-print(df_3.head(10))
+df_3_head = df_3.head(10)
+description_list_3 = []
+for index, row in df_3_head.iterrows():
+    results = df_cpc.loc[df_cpc["symbol"] == row["code"]]
+    description_list_3.append(results['titleFull'].values[0])
+df_3_head['description'] = description_list_3
+print(df_3_head)
 
 with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('# Patent Landscaping for Mechanical Engineering')
@@ -104,11 +113,11 @@ with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('\n\n## Most cited patent documents\n\n')
     f.write(df.head(10).to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited CPC categories\n\n')
-    f.write(df_2.head(10).to_markdown(floatfmt='.0f'))
+    f.write(df_4_head.to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited top CPC categories (L2)\n\n')
-    f.write(df_4.head(10).to_markdown(floatfmt='.0f'))
+    f.write(df_2_head.to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited top CPC categories\n\n')
-    f.write(df_3.head(10).to_markdown(floatfmt='.0f'))
+    f.write(df_4_head.to_markdown(floatfmt='.0f'))
 
 
 

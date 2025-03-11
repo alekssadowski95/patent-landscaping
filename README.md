@@ -25,44 +25,45 @@ This project includes 10K and 100K entries of patent documents.
 
 ## Most cited CPC categories
 
-|    | code           |   number_of_cited_by |
-|---:|:---------------|---------------------:|
-|  0 | A61B17/07207   |               464655 |
-|  1 | A61B17/072     |               221223 |
-|  2 | A61B2017/07214 |               169437 |
-|  3 | A61B2017/2927  |               149861 |
-|  4 | A61B17/115     |               130926 |
-|  5 | A61B17/1155    |               120932 |
-|  6 | A61B17/068     |               116662 |
-|  7 | H01L29/7869    |               105977 |
-|  8 | A61B17/0644    |                87650 |
-|  9 | A61B17/07292   |                85040 |
+|    | code   |   number_of_cited_by | description                                                                                           |
+|---:|:-------|---------------------:|:------------------------------------------------------------------------------------------------------|
+|  0 | A61    |              8867266 | MEDICAL OR VETERINARY SCIENCE; HYGIENE                                                                |
+|  1 | G06    |              1128847 | COMPUTING; CALCULATING OR COUNTING                                                                    |
+|  2 | H04    |               692852 | ELECTRIC COMMUNICATION TECHNIQUE                                                                      |
+|  3 | H01    |               566493 | ELECTRIC ELEMENTS                                                                                     |
+|  4 | Y10    |               422487 | TECHNICAL SUBJECTS COVERED BY FORMER USPC                                                             |
+|  5 | C07    |               265968 | ORGANIC CHEMISTRY                                                                                     |
+|  6 | C12    |               248472 | BIOCHEMISTRY; BEER; SPIRITS; WINE; VINEGAR; MICROBIOLOGY; ENZYMOLOGY; MUTATION OR GENETIC ENGINEERING |
+|  7 | G07    |               218257 | CHECKING-DEVICES                                                                                      |
+|  8 | H02    |               177065 | GENERATION; CONVERSION OR DISTRIBUTION OF ELECTRIC POWER                                              |
+|  9 | G01    |               168657 | MEASURING; TESTING                                                                                    |
 
 ## Most cited top CPC categories (L2)
 
-|     |   number_of_cited_by |
-|:----|---------------------:|
-| A61 |              8867266 |
-| G06 |              1128847 |
-| H04 |               692852 |
-| H01 |               566493 |
-| Y10 |               422487 |
-| C07 |               265968 |
-| C12 |               248472 |
-| G07 |               218257 |
-| H02 |               177065 |
-| G01 |               168657 |
+|    | code           |   number_of_cited_by | description                                                                                                                                                                                                                |
+|---:|:---------------|---------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | A61B17/07207   |               464655 | Surgical staplers, e.g. containing multiple staples or clamps for applying a row of staples in a single action, e.g. the staples being applied simultaneously the staples being applied sequentially                       |
+|  1 | A61B17/072     |               221223 | Surgical staplers, e.g. containing multiple staples or clamps for applying a row of staples in a single action, e.g. the staples being applied simultaneously                                                              |
+|  2 | A61B2017/07214 |               169437 | Stapler heads                                                                                                                                                                                                              |
+|  3 | A61B2017/2927  |               149861 | Details of heads or jaws the angular position of the head being adjustable with respect to the shaft                                                                                                                       |
+|  4 | A61B17/115     |               130926 | Staplers for performing anastomosis in a single operation                                                                                                                                                                  |
+|  5 | A61B17/1155    |               120932 | Circular staplers comprising a plurality of staples                                                                                                                                                                        |
+|  6 | A61B17/068     |               116662 | Surgical staplers, e.g. containing multiple staples or clamps                                                                                                                                                              |
+|  7 | H01L29/7869    |               105977 | Thin film transistors, i.e. transistors with a channel being at least partly a thin film having a semiconductor body comprising an oxide semiconductor material, e.g. zinc oxide, copper aluminium oxide, cadmium stannate |
+|  8 | A61B17/0644    |                87650 | Surgical staples, i.e. penetrating the tissue penetrating the tissue, deformable to closed position                                                                                                                        |
+|  9 | A61B17/07292   |                85040 | Reinforcements for staple line, e.g. pledgets                                                                                                                                                                              |
 
 ## Most cited top CPC categories
 
-|    |   number_of_cited_by |
-|:---|---------------------:|
-| A  |              9069187 |
-| G  |              1872664 |
-| H  |              1540501 |
-| C  |               688420 |
-| Y  |               444888 |
-| B  |               393890 |
-| F  |               109835 |
-| D  |                45259 |
-| E  |                10342 |
+|    | code   |   number_of_cited_by | description                                                                                           |
+|---:|:-------|---------------------:|:------------------------------------------------------------------------------------------------------|
+|  0 | A61    |              8867266 | MEDICAL OR VETERINARY SCIENCE; HYGIENE                                                                |
+|  1 | G06    |              1128847 | COMPUTING; CALCULATING OR COUNTING                                                                    |
+|  2 | H04    |               692852 | ELECTRIC COMMUNICATION TECHNIQUE                                                                      |
+|  3 | H01    |               566493 | ELECTRIC ELEMENTS                                                                                     |
+|  4 | Y10    |               422487 | TECHNICAL SUBJECTS COVERED BY FORMER USPC                                                             |
+|  5 | C07    |               265968 | ORGANIC CHEMISTRY                                                                                     |
+|  6 | C12    |               248472 | BIOCHEMISTRY; BEER; SPIRITS; WINE; VINEGAR; MICROBIOLOGY; ENZYMOLOGY; MUTATION OR GENETIC ENGINEERING |
+|  7 | G07    |               218257 | CHECKING-DEVICES                                                                                      |
+|  8 | H02    |               177065 | GENERATION; CONVERSION OR DISTRIBUTION OF ELECTRIC POWER                                              |
+|  9 | G01    |               168657 | MEASURING; TESTING                                                                                    |
