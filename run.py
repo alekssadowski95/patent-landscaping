@@ -111,7 +111,7 @@ with open(os.path.join(dir_path, "README.md"), "w") as f:
     f.write('\n\nThe goal of this project is to automate the patent landscaping process in mechanical engineering, in order to quickly identify relevant patent documents and CPC categories from a patent database. We assume, that patent documents, which are cited often, are relevant.\n\n')
     f.write('\n\nThis project includes 10K and 100K entries of patent documents.\n\n')
     f.write('\n\n## Most cited patent documents\n\n')
-    f.write(df.head(10).to_markdown(floatfmt='.0f'))
+    f.write(df.head(10).to_markdown(floatfmt=".0f"))
     f.write('\n\n## Most cited CPC categories\n\n')
     f.write(df_4_head.to_markdown(floatfmt='.0f'))
     f.write('\n\n## Most cited top CPC categories (L2)\n\n')
