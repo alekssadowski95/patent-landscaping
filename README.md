@@ -7,7 +7,7 @@ The goal of this project is to automate the patent landscaping process in mechan
 This project includes 10K and 100K entries of patent documents.
 
 
-![CLI interface of the patent landscaping tool](Anmerkung 2025-03-11 004042.png "CLI interface of the patent landscaping tool")
+![CLI interface of the patent landscaping tool](Anmerkung_2025-03-11_004042.png "CLI interface of the patent landscaping tool")
 
 
 
